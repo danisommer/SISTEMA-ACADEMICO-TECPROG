@@ -15,16 +15,9 @@
 #include <fstream>
 #include <iostream>
 
-using std::cout;
-using std::endl;
-using std::cin;
+using namespace std;
 
-Principal::Principal() :
-	// contadores da quantidade de objetos existentes
-	cont_idUniv(0),
-	cont_idAluno(0),
-	cont_idDisc(0),
-	cont_idDepart(0)
+Principal::Principal() : cont_idUniv(0), cont_idAluno(0), cont_idDisc(0), cont_idDepart(0) // contadores da quantidade de objetos existentes
 {
 
 }
@@ -39,7 +32,7 @@ void Principal::Menu()
 	int op = -1;
 	while (op != 5)
 	{
-
+		system("cls");
 		cout << " Informe sua opcao: " << endl;
 		cout << " 1 - Cadastrar. " << endl;
 		cout << " 2 - Executar. " << endl;
@@ -78,7 +71,7 @@ void Principal::MenuCad()
 	int op = -1;
 	while (op != 5)
 	{
-
+		system("cls");
 		cout << " Informe sua opcao: " << endl;
 		cout << " 1 - Cadastrar Universidade. " << endl;
 		cout << " 2 - Cadastrar Departamentos. " << endl;
@@ -119,7 +112,7 @@ void Principal::MenuExe()
 	int op = -1;
 	while (op != 5)
 	{
-
+		system("cls");
 		cout << " Informe sua opcao: " << endl;
 		cout << " 0 - Listar Tudo. " << endl;
 		cout << " 1 - Listar Universidade. " << endl;
@@ -177,7 +170,7 @@ void Principal::MenuGravar()
 	int op = -1;
 	while (op != 5)
 	{
-
+		system("cls");
 		cout << " Informe sua opcao: " << endl;
 		cout << " 0 - Gravar Tudo. " << endl;
 		cout << " 1 - Gravar Universidades. " << endl;
@@ -223,7 +216,7 @@ void Principal::MenuRecuperar()
 	int op = -1;
 	while (op != 5)
 	{
-
+		system("cls");
 		cout << " Informe sua opcao: " << endl;
 		cout << " 0 - Recuperar Tudo. " << endl;
 		cout << " 1 - Recuperar Universidades. " << endl;
